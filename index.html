@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0"/>
     <link rel="stylesheet" href="estilos/mobile.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
@@ -12,6 +13,7 @@
         <section id="login">
             <div id="imagem">
                <!-- Aqui vai imagem nas CSS -->
+               <img src="imagens/Ilustração2.png" alt="Ilustração">
             </div>
             <div id="formulario">
                 <h1>Login</h1><br>
@@ -20,14 +22,20 @@
 
                 <form action="login.php" method="post" autocomplete="on">
 
-                    <label for="e-mail1">E-mail: </label><br>
-                    <input type="email" name="e-mail" id="e-mail1" autocomplete="email" maxlength="30" placeholder="Insira seu e-mail" required><br><br>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="e-mail" id="e-mail1" autocomplete="email" maxlength="30" placeholder="Insira seu e-mail" required>
+                        <label for="e-mail1">E-mail: </label>
+                    </div>
 
-                    <label for="senha1">Senha: </label><br>
-                    <input type="password" name="senha" id="senha1" minlength="8" maxlength="12" placeholder="Insira sua senha" required><br><br>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" id="senha1" autocomplete="current-password" minlength="8" maxlength="12" placeholder="Insira sua senha" required>
+                        <label for="senha1">Senha: </label>
+                    </div>
 
                     <input type="submit" value="Entrar">
-
+                    <a href="#">Esqueci a senha</a>
                 </form>
             </div>
         </section>

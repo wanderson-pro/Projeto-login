@@ -3,33 +3,55 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
     #login {
         width: 768px;
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     #imagem {
-        float: left;
-        width: 30%;
-        height: 100%;
+        width: 35%;
+    }
+
+    #imagem > img {
+        width: 110%;
     }
 
     #formulario {
-        float: right;
-        width: 70%;
+        width: 65%;
+    }
+
+    #formulario > h1 {
+        font-size: 1.7em;
+    }
+
+    #formulario > p {
+        font-size: 1.2em;
     }
 }
 
 @media screen and (min-width: 992px) {
     #login {
         width: 992px;
+        display: flex;
+        flex-direction: row;
     }
 
     #imagem {
-        float: left;
         width: 50%;
-        height: 100%;
+    }
+
+    #imagem > img {
+        width: 120%;
     }
 
     #formulario {
-        float: right;
         width: 50%;
+    }
+
+    #formulario > h1 {
+        font-size: 2em;
+    }
+
+    #formulario > p {
+        font-size: 1.5em;
     }
 }
