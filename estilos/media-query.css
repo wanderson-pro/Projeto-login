@@ -37,13 +37,8 @@
     .campo > span {
         margin-right: 5px;
     }
-    form > input[type=submit] {
-        width: 20%;
-        padding: 7px;
-    }
     .esqueciSenha {
-        position: relative;
-        left: 120px;
+        transform: translateX(130px);
     }
 }
 @media screen and (min-width: 992px) {
@@ -83,12 +78,7 @@
     .campo > span {
         margin-right: 5px;
     }
-    form > input[type=submit] {
-        width: 20%;
-        padding: 7px;
-    }
     .esqueciSenha {
-        position: relative;
-        left: 120px;
+        transform: translateX(130px);
     }
 }

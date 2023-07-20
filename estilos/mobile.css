@@ -29,20 +29,19 @@ main {
 }
 #login {
     background-color: #fff;
-    height: 480px;
+    height: 493px;
     width: 250px;
     border-radius: 20px;
     margin: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px #00000049;
-
     transition: width .3s ease, height .3s ease;
 }
 #imagem {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--verde-3);
+    background: linear-gradient(to bottom, var(--laranja-1) 10%, var(--verde-3) 100%);
 }
 #imagem > img {
     width: 80%;
@@ -57,23 +56,30 @@ main {
     margin: 10px;
 }
 .material-symbols-outlined {
-    position: relative;
-    top: 5.5px;
+    transform: translateY(5.8px);
 }
 .campo > label {
     display: none;
 }
 .campo > input {
+    height: 100%;
+    width: calc(100% - 30px);
+    font-size: 1em;
     border: 1px solid black;
-    padding: 5px;
+    padding: 7px;
 }
+/* Qaundo clicar para digitar o campo do input vai ficar verde.
+.campo input:focus-within {
+    background-color: var(--verde-3);
+}
+*/
 form > input[type=submit] {
     display: block;
-    width: 40%;
+    width: 100px;
     background-color: var(--azul-1);
     color: #fff;
     margin: auto;
-    padding: 5px;
+    padding: 7px;
     font-size: 1.3em;
     border-radius: 5px;
     box-shadow: 3px 3px 8px #00000075;
