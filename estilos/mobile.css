@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 :root {
     --verde-1: #A8E5BA;
     --verde-2: #66EE8F;
@@ -7,23 +6,20 @@
     --verde-4: #2E6B40;
     --verde-5: #8CBF9B;
     --laranja-1: #ffb04f6e;
-
+    --azul-1: #1e2ed8;
     --fontPadrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 * {
     margin: 0px;
     padding: 0px;
     font-family: var(--fontPadrao);
     box-sizing: border-box;
 }
-
 html, body{
     height: 100vh;
     width: 100vw;
     background: linear-gradient(to top, var(--laranja-1) 10%, var(--verde-3) 100%);
 }
-
 main {
     height: 100vh;
     width: 100vw;
@@ -31,10 +27,9 @@ main {
     justify-content: center;
     align-items: center;
 }
-
 #login {
     background-color: #fff;
-    height: 500px;
+    height: 480px;
     width: 250px;
     border-radius: 20px;
     margin: 20px;
@@ -43,18 +38,56 @@ main {
 
     transition: width .3s ease, height .3s ease;
 }
-
 #imagem {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--verde-3);
 }
-
 #imagem > img {
     width: 80%;
 }
-
 #formulario {
     padding: 10px;
+}
+#formulario > h1 {
+    text-align: center;
+}
+.campo {
+    margin: 10px;
+}
+.material-symbols-outlined {
+    position: relative;
+    top: 5.5px;
+}
+.campo > label {
+    display: none;
+}
+.campo > input {
+    border: 1px solid black;
+    padding: 5px;
+}
+form > input[type=submit] {
+    display: block;
+    width: 40%;
+    background-color: var(--azul-1);
+    color: #fff;
+    margin: auto;
+    padding: 5px;
+    font-size: 1.3em;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px #00000075;
+    cursor: pointer;
+}
+form > input[type=submit]:hover {
+    background-color: #131c81;
+}
+.esqueciSenha {
+    display: block;
+    width: 112px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+.esqueciSenha:hover {
+    color: #ff8c00;
 }

@@ -3,55 +3,92 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
     #login {
         width: 768px;
+        height: 330px;
         display: flex;
         flex-direction: row-reverse;
     }
-
     #imagem {
         width: 35%;
     }
-
     #imagem > img {
         width: 110%;
     }
-
     #formulario {
         width: 65%;
     }
-
     #formulario > h1 {
         font-size: 1.7em;
     }
-
     #formulario > p {
         font-size: 1.2em;
+        text-align: justify;
+        text-indent: 20px;
+    }
+    .campo {
+        display: flex;
+        justify-content: center;
+        align-items: baseline; 
+    }
+    .campo > input {
+        width: 275px;
+        padding-left: 10px;
+        font-size: 1.2em;
+    }
+    .campo > span {
+        margin-right: 5px;
+    }
+    form > input[type=submit] {
+        width: 20%;
+        padding: 7px;
+    }
+    .esqueciSenha {
+        position: relative;
+        left: 120px;
     }
 }
-
 @media screen and (min-width: 992px) {
     #login {
         width: 992px;
+        height: 360px;
         display: flex;
         flex-direction: row;
     }
-
     #imagem {
         width: 50%;
     }
-
     #imagem > img {
-        width: 120%;
+        width: 85%;
     }
-
     #formulario {
         width: 50%;
     }
-
     #formulario > h1 {
         font-size: 2em;
     }
-
     #formulario > p {
         font-size: 1.5em;
+        text-align: justify;
+        text-indent: 20px;
+    }
+    .campo {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .campo > input {
+        width: 275px;
+        padding: 10px;
+        font-size: 1.1em;
+    }
+    .campo > span {
+        margin-right: 5px;
+    }
+    form > input[type=submit] {
+        width: 20%;
+        padding: 7px;
+    }
+    .esqueciSenha {
+        position: relative;
+        left: 120px;
     }
 }
